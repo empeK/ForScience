@@ -120,6 +120,14 @@ footer {
 footer ul,
 footer li {
   display: inline-block;
+  padding: 0;
+}
+footer li:not(:first-child) {
+  padding-left: 2rem;
+}
+footer li i:hover {
+  color: #0D7377;
+  cursor: pointer;
 }
 footer img {
   width: 50px;

@@ -7,8 +7,8 @@ var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 
 gulp.task('less', function () {
-    return gulp.src('less/*.less')
-        .pipe(watchLess('less/*.less'))
+    return gulp.src('less/ForScience.less')
+        .pipe(watchLess('less/ForScience.less'))
         .pipe(less())
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({

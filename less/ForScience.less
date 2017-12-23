@@ -104,6 +104,14 @@ footer {
     padding-top: 1rem;
     ul,li{
     	display: inline-block;
+    	padding: 0;
+    }
+    li:not(:first-child){
+    	padding-left: 2rem;
+    }
+    li i:hover {
+    	color: @primary;
+    	cursor: pointer;
     }
     img{
     	width: 50px;
