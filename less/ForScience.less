@@ -1,0 +1,112 @@
+@import './variables.less';
+@import './global.less';
+
+html,
+body {
+    background-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navholder {
+    background-color: yellow;
+    position: relative;
+}
+
+.navmain {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    margin-top: 1rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    color: @white;
+    transition: background-color 0.5s ease;
+    ul,
+    li {
+        display: inline-block;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        padding: 1rem;
+        letter-spacing: 0.15rem;
+    }
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: background-color 0.5s ease;
+}
+
+.masterhead {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0, 7), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1503925802536-c9451dcd87b5?auto=format&fit=crop&w=1950&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 80%;
+    h1 {
+        color: @secondary;
+        font-size: 4rem;
+        letter-spacing: 1rem;
+    }
+    h5 {
+        letter-spacing: 0.3rem;
+    }
+    span {
+        color: @gray-600;
+        font-size: 1.3rem;
+        letter-spacing: 0.15rem;
+    }
+    img {
+        height: 35px;
+        width: 90px;
+    }
+}
+
+.createdby {
+    margin-top: 3rem;
+    color: @primary;
+}
+#slider-section{
+	h1{
+		color: @gray-300;
+		padding-top: 2rem; 
+	}
+}
+#carousel {
+    padding: 5rem 0rem;
+    .img-fluid{
+    	border-radius: 20px;
+    }
+    .img-text {
+    	color: @white;
+    	position: absolute;
+    	top: 10px;
+    	left: 10px;
+
+    }
+}
+
+footer {
+    background-color: @gray-700;
+    color: @gray-300;
+    padding-top: 1rem;
+    ul,li{
+    	display: inline-block;
+    }
+    img{
+    	width: 50px;
+    	height: 50px;
+    }
+}

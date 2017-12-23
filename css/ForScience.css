@@ -1,0 +1,127 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Pangolin';
+}
+a,
+span,
+ul,
+li,
+p {
+  font-family: 'Inconsolata';
+}
+.no {
+  color: red;
+}
+.yes {
+  color: #0D7377;
+}
+.decent {
+  color: yellow !important;
+}
+.good {
+  color: #0D7377 !important;
+}
+html,
+body {
+  background-color: white;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navholder {
+  background-color: yellow;
+  position: relative;
+}
+.navmain {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  margin-top: 1rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  color: #fff;
+  transition: background-color 0.5s ease;
+}
+.navmain ul,
+.navmain li {
+  display: inline-block;
+}
+.navmain ul {
+  margin: 0;
+  padding: 0;
+}
+.navmain li {
+  padding: 1rem;
+  letter-spacing: 0.15rem;
+}
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: background-color 0.5s ease;
+}
+.masterhead {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1503925802536-c9451dcd87b5?auto=format&fit=crop&w=1950&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 80%;
+}
+.masterhead h1 {
+  color: #14FFEC;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+}
+.masterhead h5 {
+  letter-spacing: 0.3rem;
+}
+.masterhead span {
+  color: #868e96;
+  font-size: 1.3rem;
+  letter-spacing: 0.15rem;
+}
+.masterhead img {
+  height: 35px;
+  width: 90px;
+}
+.createdby {
+  margin-top: 3rem;
+  color: #0D7377;
+}
+#slider-section h1 {
+  color: #dee2e6;
+  padding-top: 2rem;
+}
+#carousel {
+  padding: 5rem 0rem;
+}
+#carousel .img-fluid {
+  border-radius: 20px;
+}
+#carousel .img-text {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+footer {
+  background-color: #495057;
+  color: #dee2e6;
+  padding-top: 1rem;
+}
+footer ul,
+footer li {
+  display: inline-block;
+}
+footer img {
+  width: 50px;
+  height: 50px;
+}
