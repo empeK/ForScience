@@ -3,7 +3,7 @@
 
 html,
 body {
-    background-color: white;
+    background-color: black;
 }
 
 .navbar-toggler-icon {
@@ -28,6 +28,7 @@ body {
     border-radius: 10px;
     color: @white;
     transition: background-color 0.5s ease;
+    font-size: 1.25rem;
     ul,
     li {
         display: inline-block;
@@ -40,16 +41,33 @@ body {
         padding: 1rem;
         letter-spacing: 0.15rem;
     }
+    li:hover {
+        border-bottom: 1px solid white;
+    }
+    a {
+        text-decoration: none;
+        color: @white;
+    }
+    a:hover {
+        color: @secondary;
+    }
 }
 
 .nav-fixed {
+    z-index: 1;
     position: fixed;
     top: 0;
     background-color: rgba(0, 0, 0, 0.75);
     transition: background-color 0.5s ease;
 }
-
+#coming-soon{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: @gray-600;
+}
 .masterhead {
+    position: relative;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0, 7), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1503925802536-c9451dcd87b5?auto=format&fit=crop&w=1950&q=80);
     background-repeat: no-repeat;
@@ -78,43 +96,54 @@ body {
     margin-top: 3rem;
     color: @primary;
 }
-#slider-section{
-	h1{
-		color: @gray-300;
-		padding-top: 2rem; 
-	}
-}
-#carousel {
-    padding: 5rem 0rem;
-    .img-fluid{
-    	border-radius: 20px;
-    }
-    .img-text {
-    	color: @white;
-    	position: absolute;
-    	top: 10px;
-    	left: 10px;
 
+#slider-section {
+    h1 {
+        color: @secondary;
+        padding-top: 2rem;
+        letter-spacing: 1rem;
+    }
+    span {
+        color: @white;
+    }
+}
+
+#carousel {
+    padding: 2rem 0rem;
+
+    .img-fluid {
+        border-radius: 20px;
+        width: 80%;
+        box-shadow: 0px 0px 50px 1px rgba(60, 255, 255,0.2);
+    }
+    span {
+        display: block;
+        color: @white;
+        font-size: 1.5rem;
+    }
+    .carousel-item {
+        margin: 2rem 0;
     }
 }
 
 footer {
-    background-color: @gray-700;
+    background-color: rgba(0, 0, 0, 0.7);
     color: @gray-300;
     padding-top: 1rem;
-    ul,li{
-    	display: inline-block;
-    	padding: 0;
+    ul,
+    li {
+        display: inline-block;
+        padding: 0;
     }
-    li:not(:first-child){
-    	padding-left: 2rem;
+    li:not(:first-child) {
+        padding-left: 2rem;
     }
     li i:hover {
-    	color: @primary;
-    	cursor: pointer;
+        color: @secondary;
+        cursor: pointer;
     }
-    img{
-    	width: 50px;
-    	height: 50px;
+    img {
+        width: 50px;
+        height: 50px;
     }
 }
