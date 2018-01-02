@@ -134,6 +134,16 @@ body {
 #carousel {
   padding: 2rem 0rem;
 }
+#carousel .thumbnail {
+  height: 10%;
+  width: 15%;
+  margin: 0.3rem;
+  box-shadow: 0px 0px 50px 0.5px black;
+}
+#carousel .thumbnail:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 50px 0.5px #0D7377;
+}
 #carousel .img-fluid {
   border-radius: 20px;
   width: 80%;
@@ -146,6 +156,12 @@ body {
 }
 #carousel .carousel-item {
   margin: 2rem 0;
+}
+#carousel .carousel-indicators {
+  position: static;
+}
+#carousel .carousel-indicators .active {
+  border: 1px solid #0D7377;
 }
 footer {
   background-color: rgba(0, 0, 0, 0.7);

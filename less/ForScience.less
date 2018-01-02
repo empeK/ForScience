@@ -116,7 +116,16 @@ body {
 
 #carousel {
     padding: 2rem 0rem;
-
+    .thumbnail{
+        height: 10%;
+        width: 15%;
+        margin: 0.3rem;
+        box-shadow: 0px 0px 50px 0.5px black;
+    }
+    .thumbnail:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 50px 0.5px @primary;
+    }
     .img-fluid {
         border-radius: 20px;
         width: 80%;
@@ -129,6 +138,12 @@ body {
     }
     .carousel-item {
         margin: 2rem 0;
+    }
+    .carousel-indicators{
+        position: static; 
+    }
+    .carousel-indicators .active {
+        border: 1px solid @primary;
     }
 }
 

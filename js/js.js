@@ -2,7 +2,6 @@ window.onscroll = nav;
 
 function nav() {
     var scroll = pageYOffset;
-    console.log(scroll);
     if (scroll > 5) {
         document.getElementById('navmain').classList.add("nav-fixed");
         document.getElementById('coming-soon').style.opacity = '.0';
