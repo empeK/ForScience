@@ -31,57 +31,6 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-.navholder {
-  background-color: yellow;
-  position: relative;
-}
-.navmain {
-  background-color: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  text-align: center;
-  width: 80%;
-  margin-top: 1rem;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  color: #fff;
-  transition: background-color 0.5s ease;
-  font-size: 1.25rem;
-}
-.navmain ul,
-.navmain li {
-  display: inline-block;
-}
-.navmain ul {
-  margin: 0;
-  padding: 0;
-}
-.navmain li {
-  padding: 1rem;
-  letter-spacing: 0.15rem;
-}
-.navmain li:hover {
-  border-bottom: 1px solid white;
-}
-.navmain a {
-  text-decoration: none;
-  color: #fff;
-}
-.navmain a:hover {
-  color: #14FFEC;
-}
-.nav-fixed {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.75);
-  transition: background-color 0.5s ease;
-}
 #coming-soon {
   position: absolute;
   left: 10px;
@@ -163,24 +112,33 @@ body {
 #carousel .carousel-indicators .active {
   border: 1px solid #0D7377;
 }
-footer {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #dee2e6;
-  padding-top: 1rem;
+#carousel .carousel-control-prev-icon,
+#carousel .carousel-control-next-icon {
+  height: 130px;
+  width: 100px;
+  background-image: none;
 }
-footer ul,
-footer li {
-  display: inline-block;
-  padding: 0;
-}
-footer li:not(:first-child) {
-  padding-left: 2rem;
-}
-footer li i:hover {
+#carousel .carousel-control-next-icon:after {
+  content: '>';
+  font-size: 40px;
   color: #14FFEC;
-  cursor: pointer;
 }
-footer img {
-  width: 50px;
-  height: 50px;
+#carousel .carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 40px;
+  color: #14FFEC;
+}
+footer {
+  color: #fff;
+  letter-spacing: 0.25rem;
+}
+footer h3 {
+  font-size: 1.3rem;
+}
+footer a {
+  color: #14FFEC;
+}
+footer a:hover {
+  color: #0D7377;
+  text-decoration: none;
 }
